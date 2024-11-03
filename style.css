@@ -1,0 +1,54 @@
+html{
+    height: 100%;
+}
+html,body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+div{
+    width: 400px;
+    height: 400px;
+    gap: 20px;
+}
+button{
+    margin-left: 12px;
+    margin-top: 20px;
+    background-color: lightskyblue;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+    border: 2px solid;
+}
+section{
+    width: 150px;
+    height: 150px;
+    background-color: lightseagreen;
+    margin-top: 100px;
+    margin-left: 130px;
+    border: 2px solid black;
+}
+.Translate:hover~section{
+    transition-duration: 3s;
+    transform: translate(50px,50px); 
+    background-color: purple;   
+}
+.Scale:hover~section{
+    transition-duration: 4s;
+    transform: scale(2);
+}
+.Skew:hover~section{
+    transition-duration: 4s;
+    transform: skew(50deg);
+}
+.Rotate:hover~section{
+    transition-duration: 4s;
+    transform: rotate(1000deg);
+}
+.rotatescale:hover~section{
+    transition-duration: 4s;
+    transform: rotate(300deg)scale(2);
+}
+
+
